@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/registrationbackground"
+    tools:context=".registration">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registration"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/registrationname"
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/name"
+        android:textSize="16sp"
+        android:textColorHint="#80FFFFFF"
+        android:textColor="#FFFFFF"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="12dp"
+        android:backgroundTint="#40FFFFFF"
+        android:background="@drawable/customedittext"
+        android:inputType="text"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/registrationemail"
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/email"
+        android:textSize="16sp"
+        android:textColorHint="#80FFFFFF"
+        android:textColor="#FFFFFF"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="12dp"
+        android:backgroundTint="#40FFFFFF"
+        android:background="@drawable/customedittext"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/registrationpass"
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/password"
+        android:textSize="16sp"
+        android:textColorHint="#80FFFFFF"
+        android:textColor="#FFFFFF"
+        android:drawableStart="@drawable/baseline_password_24"
+        android:drawablePadding="12dp"
+        android:backgroundTint="#40FFFFFF"
+        android:background="@drawable/customedittext"
+        android:inputType="textPassword"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#07E811"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:background="@drawable/customloginbutton"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/regsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/already_have_an_account_signin_here"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_bold"/>
+
+</LinearLayout>

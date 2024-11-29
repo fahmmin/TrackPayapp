@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="7dp"
+    tools:context=".expenseFragment">
+
+   >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardElevation="5dp"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expense"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat_bold"/>
+
+            <TextView
+                android:id="@+id/Expense_in_Expensefragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.000"
+                android:textColor="#E30702"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:fontFamily="@font/montserrat"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:id="@+id/recyclerview_in_expense">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</FrameLayout>
